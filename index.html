@@ -10,7 +10,7 @@
     <header>
         <h1>Jumbo fish fingers</h1>
         <h4>GOLDEN CRISPY BREADCRUMBS</h4>
-        <img width="400px" src="./JumboFishFingers.jpg" alt="JumboFishFingers" title="jumbo fish fingers"><br>
+        <img width=400px src="./JumboFishFingers.jpg" alt="JumboFishFingers" title="jumbo fish fingers"><br>
         <strong>Makes</strong> 10 portions <strong>Cooks In</strong> 25 minutes prep, plus cooking <strong>Difficulty</strong> Not too tricky
         <hr/>
     </header>
@@ -55,12 +55,11 @@
             <fieldset style="width: 430px;">
                 <legend>Enter a comment</legend>
                 <label><strong>Name:</strong></label>
-                <input style="width: 410px;" type="text">
+                <input style="width: 410px;" type="text" required>
                 <br><br>
                 <label><strong>Comment:</strong></label>
-                <textarea rows="4"  style="width: 420px;"  placeholder="Enter your comment here..."></textarea>
-                
-                <img src="./PlusSign.jpg" width="50px" alt="plus sign">
+                <textarea rows="4"  style="width: 420px;"  placeholder="Enter your comment here..." required></textarea>
+                <input type="image" src="./PlusSign.jpg" width=50px alt="plus sign"></input>
             </fieldset>
             <strong>All comments:</strong>
             <blockquote>
@@ -72,7 +71,7 @@
             <hr>
         </form>
 
-        <form action="mailto:s201914230@kfupm.edu.sa" method="post" enctype="text/plain">
+        <form action="mailto:s201914230@kfupm.edu.sa" method="post" enctype="multipart/form-data">
             <h1>Sign-up to receive new recipes:</h1>
             <fieldset style="width: 270px;">
                 <legend>Personal Information</legend>
@@ -80,7 +79,7 @@
                 <input type="text" name="name" required>
                 <br><br>
                 <label><strong>Email:</strong></label>
-                <input type="email" placeholder=" xxxx@domain.com" name="email" required>
+                <input type="email" placeholder=" xxxx@domain.com" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             </fieldset>
 
             <br>
